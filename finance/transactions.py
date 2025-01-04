@@ -1,7 +1,7 @@
 import sqlite3
 from datetime import datetime
 
-def add_transaction(username, amount, category, transaction_type):
+def add_transaction(username, amount, category, transaction_type,date):
     conn = sqlite3.connect("finance.db")
     cursor = conn.cursor()
     date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

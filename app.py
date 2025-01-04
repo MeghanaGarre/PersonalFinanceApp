@@ -22,6 +22,7 @@ def main():
                 while True:
                     transaction_choice = input("1. Add Transaction\n2. Update Transaction\n3. Delete Transaction\n4. View Transactions\n5. Generate Monthly Report\n6. Generate Yearly Report\n7. Set Budget\n8. Check Budget\n9. View Budgets\n10. Logout\nChoose an option: ")
                     if transaction_choice == "1":
+                        username=input("Enter username: ")
                         amount = float(input("Enter amount: "))
                         category = input("Enter category (e.g., Salary, Rent, Food): ")
                         transaction_type = input("Enter type (income/expense): ").lower()
@@ -79,11 +80,11 @@ def main():
                         print("Invalid choice. Please try again.")
             else:
                 print("Login failed. Please check your username and password.")
-        elif choice == "4":
-            backup_database()
-        elif choice == "5":
-            restore_database()
         elif choice == "3":
+            backup_database()
+        elif choice == "4":
+            restore_database()
+        elif choice == "5":
             print("Exiting.")
             break
         else:
