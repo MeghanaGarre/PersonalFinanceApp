@@ -1,0 +1,12 @@
+PersonalFinanceApp/
+├── app.py  # Main application file
+├── db/
+│   └── database.py  # Database connection and operations
+├── auth/
+│   ├── registration.py  # User registration
+│   └── login.py  # User login
+├── finance/
+│   ├── transactions.py  # Income/expense handling
+│   └── reports.py  # Report generation
+└── tests/
+    └── test_app.py  # Unit tests
